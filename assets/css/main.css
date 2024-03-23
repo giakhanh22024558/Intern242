@@ -1,0 +1,281 @@
+.bottom-header {
+    background-color: #0d6efd;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+input,
+select,
+button {
+    outline: none;
+}
+
+.search-bar-holder:focus-within {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-header,
+.linked-group {
+    max-width: 1170px;
+}
+
+.search-input::placeholder {
+    color: darkgray;
+}
+
+.search-input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.hotline-btn {
+    background-color: #4e8c39;
+}
+
+.linked-group-button {
+    color: white;
+    background-color: #0d6efd;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+    border-radius: 0;
+}
+
+.linked-group-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: #0d6efd;
+    position: relative;
+}
+
+
+.linked-group-button:hover .dropdown-menu {
+    opacity: 1;
+    height: 180px;
+    transform: translateY(0);
+    pointer-events: visible;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: 2.15rem;
+    left: -0.1rem;
+    font-size: 12px;
+    border-radius: 0;
+    text-transform: none;
+    transition: all 0.6s ease;
+    width: 100%;
+    pointer-events: none;
+}
+
+.dropdown-item {
+    transition: transform 0.5s ease;
+    font-weight: 500;
+}
+
+.search-bar-holder-mobile{
+    width: 100%;
+    padding: 0 5 0 5;
+    margin: 0 10% 0 10%;
+    background-color: white;
+}
+
+.search-bar-holder-mobile input[type="search"] {
+    flex: 1;
+}
+
+.dropdown-item:hover {
+    transform: scale(1.1);
+    background-color: #0d6efd;
+    color: white;
+}
+
+.btn-group div a {
+    margin-right: 20px;
+}
+
+.first-button{
+    display: none;
+} 
+
+.navbar-toggler{
+    display: none;
+}
+
+.collapse, .collapsing{
+    left: 0 !important;
+    top: 4rem;
+    width: 100%;
+    z-index: 50;
+}
+
+.logo-img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.carousel{
+    max-width: 1920px;
+}
+
+.mobile-search-toggle{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 8;
+    width: 100%;
+    color: gray;
+    transition: 0.2s all;
+    font-weight: lighter;
+    font-size: medium;
+    cursor: text;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0 8px 0 8px;
+    border-radius: 5px;
+    border: lightgrey solid 1px;
+    font-size: small;
+    color: #111;
+}
+
+input:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 10px;
+    top: -15px;
+}
+
+textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0 8px 0 8px;
+    border-radius: 5px;
+    border: lightgrey solid 1px;
+    font-size: small;
+    resize: none;
+    color: #111;
+}
+
+textarea:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus~label,
+textarea:valid~label {
+    font-size: 10px;
+    top: -15px;
+}
+
+.request-form{
+    flex-direction: column;
+    border: 1px solid lightgray;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    gap: 1rem;
+}
+
+.request-form-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0d6efd;
+    margin: 0;  
+    align-items: flex-end;
+}
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: lightgray !important;
+}
+
+.icon-border{
+    padding: 5px;
+    background-color: #0d6efd;
+    border-radius: 100%;
+    width: 54px;
+    height: 54px;
+}
+
+.icon-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content {
+    display: -webkit-box;
+    -webkit-line-clamp: 8; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.schedule-wrapper{
+    padding: 0;
+}
+
+.icon-wrapper{
+    border: 1px solid #0d6efd;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-media-icon:hover > .icon-wrapper{
+    background-color: white !important;
+    color: #0d6efd !important;
+}
+
+.service-title::after{
+    content: url(/src/assets/photo/hr2.png);
+}
+
+.header-warpper {
+    background-color: white;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
+}
+
